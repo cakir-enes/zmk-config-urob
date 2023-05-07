@@ -5,7 +5,7 @@
 #define X_LB  &kp ESC
 #define X_RB  &kp SQT
 #define X_LH  &smart_mouse  // thumb row, left
-#define X_RH  &bs_del       // thumb row, right
+#define X_RH  &kp LC(LA(LSHIFT))// thumb row, right
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1

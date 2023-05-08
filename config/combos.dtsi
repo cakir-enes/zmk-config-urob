@@ -16,7 +16,7 @@
 
 // make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_TAB    &hml         LA(LCTRL) TAB
-#define HRC_REPEAT &hml_repeat  LS(LCTRL) 0
+#define HRC_REPEAT &hml         LS(LCTRL) ESC
 #define HRC_LPAR   &hmr_lpar_lt RS(LCTRL) 0
 #define HRC_RPAR   &hmr_rpar_gt LA(LCTRL) 0
 
@@ -30,7 +30,7 @@ ZMK_COMBO(repeat,HRC_REPEAT,    LM2 LM1,     DEF NAV NUM, COMBO_TERM_FAST)
 
 ZMK_COMBO(cut,   &kp LG(X),     LB3 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(copy,  &kp LG(C),     LB3 LB2,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(paste, &kp LS(B),     LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(paste, &kp LG(V),     LB2 LB1,     DEF NAV NUM, COMBO_TERM_FAST)
 
 /* Horizontal combos - right hand */
 ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     DEF NAV NUM, COMBO_TERM_FAST)

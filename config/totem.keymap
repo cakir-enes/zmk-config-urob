@@ -5,10 +5,12 @@
 #define X_LB  &kp ESC
 #define X_RB  &kp SQT
 #define X_LH  &smart_mouse  // thumb row, left
-#define X_RH  &kp LC(LA(LSHIFT))// thumb row, right
+#define X_RH  &sk LC(LA(LSHIFT))// thumb row, right
+#define NAV_BSPC  &mt LA(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
 
 /* source the main keymap */
 #include "base.keymap"
+

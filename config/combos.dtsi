@@ -22,7 +22,7 @@
 
 /* Horizontal combos - left hand */
 ZMK_COMBO(excl,   &kp EXCL,     LT4 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(and,    &kp RETURN,   LT2 LT1,     DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(and,    &kp AMPS,     LT2 LT1,     DEF NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(or,     &kp PIPE,     LT3 LT1,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 
@@ -44,9 +44,9 @@ ZMK_COMBO(lbrc,  &kp LBRC,      RM1 RM3,     DEF     NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lt,    &kp LT,        RM1 RM2,         NAV    , COMBO_TERM_FAST)
 ZMK_COMBO(gt,    &kp GT,        RM2 RM3,         NAV    , COMBO_TERM_FAST)
 
-ZMK_COMBO(perc,  &kp PERC,      RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
-//ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,         NAV    , COMBO_TERM_FAST)
+ZMK_COMBO(perc,  &kp PERCENT,   RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(sqt,   &kp SQT,        RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(dqt,   &kp DQT,        RB1 RB3,     DEF NAV    , COMBO_TERM_FAST)
 //ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST)
 
 

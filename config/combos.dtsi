@@ -45,8 +45,8 @@ ZMK_COMBO(lt,    &kp LT,        RM1 RM2,         NAV    , COMBO_TERM_FAST)
 ZMK_COMBO(gt,    &kp GT,        RM2 RM3,         NAV    , COMBO_TERM_FAST)
 
 ZMK_COMBO(perc,  &kp PERCENT,   RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(sqt,   &kp SQT,        RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(dqt,   &kp DQT,        RB1 RB3,     DEF NAV    , COMBO_TERM_FAST)
+ZMK_COMBO(sqt,   &kp SQT,       RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(dqt,   &kp DQT,       RB1 RB3,     DEF NAV    , COMBO_TERM_FAST)
 //ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST)
 
 
@@ -54,7 +54,7 @@ ZMK_COMBO(dqt,   &kp DQT,        RB1 RB3,     DEF NAV    , COMBO_TERM_FAST)
 ZMK_COMBO(at,     &kp AT,        LT3 LM3,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(hash,   &kp HASH,      LT2 LM2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(grave,  &kp GRAVE,     LT1 LM1,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(dollar, &kp DOLLAR,     LT0 LM0,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(dollar, &kp DOLLAR,    LT0 LM0,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 //ZMK_COMBO(grave, &kp GRAVE,     LM3 LB3,     DEF NAV NUM, COMBO_TERM_SLOW)
 //ZMK_COMBO(bslh,  &kp BSLH,      LM2 LB2,     DEF NAV NUM, COMBO_TERM_SLOW)
@@ -64,10 +64,10 @@ ZMK_COMBO(dollar, &kp DOLLAR,     LT0 LM0,     DEF NAV NUM, COMBO_TERM_SLOW)
 /* Vertical combos - right hand */
 ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(rpar,  &kp RPAR,      RT1 RM1,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(rbrt,  &kp RBRT,      RT2 RM2,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(rbkt,  &kp RBKT,      RT2 RM2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(rbrc,  &kp RBRC,      RT3 RM3,     DEF NAV NUM, COMBO_TERM_SLOW)
 
-ZMK_COMBO(plus,  &kp PLUS,     RM1 RB1,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(plus,  &kp PLUS,      RM1 RB1,      DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(minus, &kp MINUS,     RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(star,  &kp STAR,      RM2 RB2,     DEF NAV NUM, COMBO_TERM_SLOW)
 

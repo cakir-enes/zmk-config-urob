@@ -46,7 +46,7 @@ ZMK_COMBO(gt,    &kp GT,        RM2 RM3,         NAV    , COMBO_TERM_FAST)
 
 ZMK_COMBO(perc,  &kp PERCENT,   RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
 ZMK_COMBO(sqt,   &kp SQT,       RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(dqt,   &kp DQT,       RB1 RB3,     DEF NAV    , COMBO_TERM_FAST)
+ZMK_COMBO(dqt,   &kp DQT,       RB1 RB3,     DEF NAV    , COMBO_TERM_SLOW)
 //ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST)
 
 
@@ -77,5 +77,5 @@ ZMK_COMBO(eqalt, &kp EQUAL,     LM0 LB0,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(tilde,  &kp TILDE,      LM1 LT2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(eq,     &kp EQUAL,      LM2 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(under,  &kp UNDER,      RM2 RB1,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(under,  &kp UNDER,      LM1 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
 

@@ -159,7 +159,7 @@ ZMK_BEHAVIOR(comma_morph, mod_morph,
     bindings = <&kp COMMA>, <&comma_inner_morph>;
 )
 ZMK_BEHAVIOR(comma_inner_morph, mod_morph,
-    bindings = <&kp SEMICOLON>, <&kp LESS_THAN>;
+    bindings = <&kp LESS_THAN>, <&kp SEMICOLON>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
@@ -173,10 +173,26 @@ ZMK_BEHAVIOR(dot_inner_morph, mod_morph,
     mods = <(MOD_LCTL|MOD_RCTL)>;
 )
 
+ZMK_BEHAVIOR(col_morph, mod_morph,
+    bindings = <&kp COLON>, <&colon_inner_morph>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+ZMK_BEHAVIOR(colon_inner_morph, mod_morph,
+    bindings = <&kp SEMICOLON>, <&kp GREATER_THAN>;
+    mods = <(MOD_LCTL|MOD_RCTL)>;
+)
+
 // tap: qmark | shift + tap: excl
 ZMK_BEHAVIOR(qexcl, mod_morph,
     bindings = <&kp QMARK>, <&kp EXCL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+ZMK_BEHAVIOR(ht, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&kp>, <&kp>;
 )
 
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: activate layer
@@ -233,6 +249,9 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define DSK_PREV    &hmr RSHFT LC(LEFT)  // previous desktop
 #define DSK_NEXT    &hmr LALT LC(RIGHT)  // next     desktop
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
+#define MUSIC       &ht S(F13) S(F14)
+#define BRIGHT         &ht S(F16)  S(F19)
+#define VOL      &ht S(F17)  S(F18)
 
 /* Keymap */
 
@@ -242,9 +261,9 @@ ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     &kp Q         &kp W         &kp E         &kp R         &kp T           X_MT     &kp Y         &kp U         &kp I         &kp O         &kp P           X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &hml LGUI A   &hml LCTRL S   &hml LALT D  &hml LSHFT F  &kp G           X_MM     &kp H         &hmr RSHFT J  &hmr LALT K  &hmr LCTRL L   &hmr LGUI SQT   X_RM
+    X_LM     &hml LGUI A   &hml LCTRL S   &hml LALT D  &hml LSHFT F  &kp G           X_MM     &kp H         &hmr RSHFT J  &hmr LALT K  &hmr LCTRL L   &col_morph   X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &comma_morph  &dot_morph    &qexcl          X_RB
+    X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &kp COMMA    &kp DOT        &kp SLH          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                                &lt FN RET   &lt_spc NAV 0   X_MH     &smart_shft   &sk LC(LA(LSHIFT))                                        X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
@@ -256,9 +275,9 @@ ZMK_LAYER(nav,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &sk LGUI      &sk LCTRL      &sk LALT     &sk LSHFT     ___             X_MM     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT     &kp RET         X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     ___           ___           ___           &kp LC(TAB)   ___             X_MB     &kp PG_DN       &kp TAB       &kp LT        &kp GT        ___           X_RB
+    X_LB     ___           ___           ___           &kp LC(TAB)   ___             X_MB     &kp PG_DN     MUSIC         VOL           BRIGHT        ___           X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               ___           ___             X_MH     &kp LG(TAB)     CANCEL                                                  X_RH
+    X_LH                                               ___           ___             X_MH     &kp LG(SPC)     CANCEL                                                  X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 

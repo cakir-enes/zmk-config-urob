@@ -249,9 +249,9 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define DSK_PREV    &hmr RSHFT LC(LEFT)  // previous desktop
 #define DSK_NEXT    &hmr LALT LC(RIGHT)  // next     desktop
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-#define MUSIC       &ht S(F13) S(F14)
-#define BRIGHT      &ht S(F16) S(F19)
-#define VOL         &ht S(F17) S(F18)
+#define MUSIC       &ht LS(F13) LS(F14)
+#define BRIGHT      &ht LS(F16) LS(F19)
+#define VOL         &ht LS(F17) LS(F18)
 
 /* Keymap */
 

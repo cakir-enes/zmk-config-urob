@@ -250,8 +250,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define DSK_NEXT    &hmr LALT LC(RIGHT)  // next     desktop
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
 #define MUSIC       &ht S(F13) S(F14)
-#define BRIGHT         &ht S(F16)  S(F19)
-#define VOL      &ht S(F17)  S(F18)
+#define BRIGHT      &ht S(F16) S(F19)
+#define VOL         &ht S(F17) S(F18)
 
 /* Keymap */
 
@@ -261,9 +261,9 @@ ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     &kp Q         &kp W         &kp E         &kp R         &kp T           X_MT     &kp Y         &kp U         &kp I         &kp O         &kp P           X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &hml LGUI A   &hml LCTRL S   &hml LALT D  &hml LSHFT F  &kp G           X_MM     &kp H         &hmr RSHFT J  &hmr LALT K  &hmr LCTRL L   &col_morph   X_RM
+    X_LM     &hml LGUI A   &hml LCTRL S   &hml LALT D  &hml LSHFT F  &kp G           X_MM     &kp H         &hmr RSHFT J  &hmr LALT K  &hmr LCTRL L   &col_morph      X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &kp COMMA    &kp DOT        &kp SLH          X_RB
+    X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &kp COMMA    &kp DOT        &kp FSLH          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                                &lt FN RET   &lt_spc NAV 0   X_MH     &smart_shft   &sk LC(LA(LSHIFT))                                        X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯

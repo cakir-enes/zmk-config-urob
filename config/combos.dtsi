@@ -64,7 +64,7 @@ ZMK_COMBO(dollar, &kp DOLLAR,     LT0 LM0,     DEF NAV NUM, COMBO_TERM_SLOW)
 /* Vertical combos - right hand */
 ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(rpar,  &kp RPAR,      RT1 RM1,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(rbrk,  &kp RBRK,      RT2 RM2,     DEF NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(rbrt,  &kp RBRT,      RT2 RM2,     DEF NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(rbrc,  &kp RBRC,      RT3 RM3,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(plus,  &kp PLUS,     RM1 RB1,     DEF NAV NUM, COMBO_TERM_SLOW)
